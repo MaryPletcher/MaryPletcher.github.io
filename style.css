@@ -1,105 +1,102 @@
-/* Define colors as variables */
-:root {
-    --text-color: #000000; /* Dark text color */
-    --background-color: #FFFFFF; /* Cream background color */
-    --accent-color: #006400; /* Dark green accent color */
 
-    --font-family: 'Avenir Next', sans-serif; /* Default font family */
-    --font-size: 16px; /* Default font size */
+:root {
+    --main-font: "Inter", Inter, sans-serif;
+    --font-color: #302C29;
+    --background-color: #F2E1D2 ;
+    --highlight-color: #E45D29;
   }
 body {
-    font-family: var(--font-family);
-    background-color: var(--background-color); 
-    color: var(--text-color);
-    margin: 0;
-    padding: 20px; /* Add more padding to the body */
+    background-color: var(--background-color);
 }
 
-header {
-    display: flex;
-    align-items: center;
-    background-color: var(--background-color); 
-    padding-top: 1em;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-}
-
-#logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.5em;
-    color: var(--text-color);
-    padding: 20px; /* Add more padding to the body */
-
-}
-#logo img {
-    width: 125px; /* Adjust the width as needed */
-    height: auto; /* Maintain the aspect ratio */
-    object-fit: cover; /* Crop the image to cover the specified dimensions */
-    border-radius: 50%; /* Create a circular mask */
-    margin-right: 10px;
-}
-
-.intro-content {
-    padding-left: 70px;
-    padding-right:40px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 1em;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--text-color);
-}
-
-section {
-    padding: 2em;
-}
-
-#pageContent {
+.header{
+    width: 100%;
+    max-width: 1440;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    background-color: var(--highlight-color);
 }
-
-main {
-    flex: 2;
-}
-
-article {
-    margin-bottom: 2em;
-}
-
-aside {
-    flex: 1;
-    background-color: #004d26; /* Dark green aside background */
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
     color: var(--font-color);
-    padding: 1em;
+    height: 96px;
+    align-items: center;
+    margin-right: 70px;
 }
 
-footer {
-    background-color: #006400; /* Dark green footer */
-    padding: 1em;
-    text-align: center;
+.nav>li{
+    margin-left: 15px; /* even spacing amongst list items*/
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+.nav a {
+    text-decoration: none; /* Remove underline for links inside .nav */
+    color: var(--font-color);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 70px;
+
+}
+.logo_img {
+    display: block;
+    width: 58px;
+    height: 58px;
+    background-image: url();
+    margin-right: 20px;
+}
+.logo_text {
+    font-size: 36px;
+    color: var(--font-color);
+    line-height: .7;
+    font-weight: bolder;
 }
 
-a {
-    color: var(--accent-color);
+/*hero*/
+.hero {
+    width: 100%;
+    max-width: 1440;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    color: var(--font-color);
+    font-family: var(--main-font);
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    
 }
 
-/* Change the color of links when hovered */
-a:hover {
-    color: var(--font-color); /* Choose a different color for the hover effect */
+.hero_intro{
+    display: flex;
+    height: 520px; 
+    align-items: center;
+    font-size: 96px;
+    font-weight: bold;
+    
+}
+.hero_description{
+    display: flex;
+    height: 520px; 
+    width: 420px;
+    align-items: center;
+    font-size: 32px;
+    text-align: right; 
+    
 }
 
+.highlight {
+    color: var(--highlight-color);
+}
