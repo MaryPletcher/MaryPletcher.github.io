@@ -23,7 +23,6 @@ body {
     box-sizing: border-box;
     font-family: var(--main-font);
     background-color: var(--highlight-color);
-    
 }
 .nav {
     list-style-type: none;
@@ -41,10 +40,12 @@ body {
     font-weight: bold;
     
 }
+
 .nav a {
     text-decoration: none; /* Remove underline for links inside .nav */
     color: var(--font-color);
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -52,6 +53,7 @@ body {
     margin-left: 70px;
 
 }
+
 .logo_img {
     display: block;
     width: 58px;
@@ -59,6 +61,7 @@ body {
     background-image: url();
     margin-right: 20px;
 }
+
 .logo_text {
     font-size: 36px;
     color: var(--font-color);
@@ -71,36 +74,35 @@ body {
     width: 100%;
     max-width: 1440; 
     display: flex;
-    justify-content: center;
+    /* justify-content: center;   */
     justify-content: space-between;
     color: var(--font-color);
     font-family: var(--main-font);
     align-items: center;
+    align-items: flex-start;
     margin-left: 70px;
     margin-right: 70px;  
     
 }
 
 .hero_intro {
-    display: flex;
+    /* display: flex;
     height: 520px; 
-    width: 420px;
-    align-items: center;
+    width: 420px;*/
+    /* align-items: center;  */
     font-size: 96px;
     font-weight: bolder;
     text-align: left; 
-    
-    
 }
-.hero_description{
-    display: flex;
+
+.hero_description {
+    /* display: flex;
     height: 520px; 
     width: 420px;
-    align-items: center;
+    align-items: center; */
+    max-width: 420px; 
     font-size: 32px;
-    justify-content: flex-start;
     padding-right: 140px;
-    
 }
 
 .hero_image{
@@ -110,5 +112,4 @@ body {
 }
 .highlight {
     color: var(--highlight-color);
-    outline: 1px solid red;  
 }
